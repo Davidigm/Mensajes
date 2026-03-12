@@ -1,0 +1,15 @@
+<h2>Carrito</h2>
+
+<div *ngFor="let p of carritoService.carrito">
+
+<p>{{p.name}} - ${{p.price}}</p>
+
+</div>
+
+<h3>Total: ${{carritoService.total()}}</h3>
+
+<button (click)="exportarXML()">
+
+Descargar recibo XML
+
+</button>

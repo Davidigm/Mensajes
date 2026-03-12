@@ -1,0 +1,14 @@
+<h2>Catálogo de Productos</h2>
+
+<div class="catalogo-grid">
+
+  <app-product-card
+    *ngFor="let producto of productos"
+    [producto]="producto">
+  </app-product-card>
+
+</div>
+
+<button routerLink="/carrito" class="btn-compra">
+Procesar compra
+</button>
