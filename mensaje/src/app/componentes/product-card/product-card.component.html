@@ -1,4 +1,6 @@
-<div style="border:1px solid gray; padding:10px; margin:10px">
+<div class="producto-card">
+
+<img [src]="producto.image" alt="{{producto.name}}">
 
 <h3>{{producto.name}}</h3>
 
@@ -6,6 +8,8 @@
 
 <p>Precio: ${{producto.price}}</p>
 
-<button (click)="agregar()">Agregar al carrito</button>
+<button (click)="agregar()">
+Agregar al carrito
+</button>
 
 </div>
